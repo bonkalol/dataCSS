@@ -1,0 +1,24 @@
+@import 'hero.setters';
+
+[data-hero-wrap] {
+	@include size(
+			map-get($heroWrap, width),
+			map-get($heroWrap, height)
+		);
+	background: map-get($heroWrap, background);
+
+
+	@if (map-get($heroWrap, alignType) == 'absolute') { position: relative; }
+	@else if (map-get($heroWrap, alignType) == 'flex') { @include flex(center, center); flex-direction: column; }
+	@else {
+		@warn "You can apply only 'flex'/'absolute' into alignType. If it not getting this values, it will set to 'absolute'";
+		position: relative;
+	}
+}
+
+[data-hero-content] {
+	@if (map-get($heroWrap, alignType) == 'absolute') { 
+		position: absolute;
+		@include alignMid();
+	}
+}

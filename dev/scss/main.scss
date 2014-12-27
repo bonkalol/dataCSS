@@ -1,36 +1,17 @@
-@import 'config';
+// core configs
+@import 'core.config';
 
 // meta
 @import 'meta/mixins';
+@import 'meta/func.lib';
 @import 'meta/variables';
 @import 'meta/silent.classes';
-
-
 
 // base
 @import 'base/reset';
 @import 'base/font';
 @import 'base/base';
 
-// project
-@import 'project/class.lib';
-@import 'project/sprite';
-// project items
-@import 'project/items/header';
-@import 'project/items/nav';
-@import 'project/items/footer';
-// project pages
-@import 'project/pages/index';
 
-
-
-// cosmetic
-@import 'cosmetic/animation';
-@import 'cosmetic/cosmetic';
-
-
-// third-party css
-@import 'third-party/jelect';
-
-// cosmetic responsive
-@import 'cosmetic/responsive';
+// components
+@import 'components/components';

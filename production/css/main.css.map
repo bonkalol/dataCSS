@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAqB,0eAA0Z,GAAC,MAAM,EAAC,CAAC,EAAC,SAAS,EAAC,IAAI,EAAC,IAAI,EAAC,OAAO,EAAC,cAAc,EAAC,QAAQ,EAAC,MAAM,EAAC,CAAC,EAAC,OAAO,EAAC,CAAC;;AAAC,uFAA6E,GAAC,OAAO,EAAC,KAAK;;AAAC,IAAI,GAAC,WAAW,EAAC,CAAC;;AAAC,MAAK,GAAC,UAAU,EAAC,IAAI;;AAAC,aAAY,GAAC,MAAM,EAAC,IAAI;;AAAC,sDAAmD,GAAC,OAAO,EAAC,IAAI;;AAAC,KAAK,GAAC,eAAe,EAAC,QAAQ,EAAC,cAAc,EAAC,CAAC;;ACA9wB,oBAES,GACR,UAAU,EAAE,UAAU;;AAGvB,IAAK,GACJ,cAAc,EAAE,WAAW,EAC3B,sBAAsB,EAAE,WAAW;;AAGpC,UAAW,GCVV,KAAK,EDWS,IAAI,ECVlB,MAAM,EDUQ,IAAI;;AEVnB,gBAAiB,GDDhB,KAAK,EEEG,IAAI,EFDZ,MAAM,EEEG,IAAI,EDGb,UAAU,ECFG,WAAW,EDK4B,QAAQ,EAAE,QAAQ;;AAQvE,mBAAoB,GAElB,QAAQ,EAAE,QAAQ,ED8EnB,GAAG,EAAE,GAAG,EACR,IAAI,EAAE,GAAG,EACT,SAAS,EAAE,qBAAqB",
+"sources": ["file:///f:/web/materialCSS/dev/scss/base/_reset.scss","file:///f:/web/materialCSS/dev/scss/base/_base.scss","file:///f:/web/materialCSS/dev/scss/meta/_mixins.scss","file:///f:/web/materialCSS/dev/scss/components/hero/_hero.scss","file:///f:/web/materialCSS/dev/scss/components/hero/_hero.setters.scss"],
+"names": [],
+"file": "main.css"
+}

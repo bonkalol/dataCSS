@@ -11,7 +11,9 @@ html
 	body
 		//- include partials/header
 			include partials/nav
-		h1 QSTemplate based on Gulp!
+		header(data-hero-wrap)
+			div.hero(data-hero-content)
+				h1 QSTemplate based on Gulp!
 
 		//- include partials/footer
 		+script('js/main.js')
