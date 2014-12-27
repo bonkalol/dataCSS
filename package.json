@@ -1,25 +1,27 @@
 {
   "name": "QSTemplate-gulp",
-  "version": "1.0.0",
-  "description": "Quick Start template for your web-project",
+  "version": "0.1.0",
+  "description": "materialCSS is a CSS Framework",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bonkalol/QSTemplate-gulp.git"
+    "url": "https://github.com/bonkalol/materialCSS.git"
   },
   "keywords": [
     "jade",
     "sass",
     "gulp",
-    "template"
+    "template",
+    "css",
+    "framework"
   ],
   "author": "Bogdan Blinnikov <bonkalol@list.ru>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bonkalol/QSTemplate-gulp/issues"
+    "url": "https://github.com/bonkalol/materialCSS/issues"
   },
   "devDependencies": {
     "gulp": "~3.8.9",
