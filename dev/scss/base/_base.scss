@@ -12,3 +12,20 @@ body {
 html, body {
 	@include size(100%);
 }
+
+
+// some resets
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+}
+
+input,
+textarea {
+	font-family: inherit;
+}

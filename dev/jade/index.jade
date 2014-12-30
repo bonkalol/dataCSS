@@ -12,8 +12,10 @@ html
 		//- include partials/header
 			include partials/nav
 		header(data-hero-wrap)
-			div.hero(data-hero-content)
+			div(data-hero-content)
 				h1 QSTemplate based on Gulp!
+				div(data-button-set)
+				div(data-button="warning big") Content
 
 		//- include partials/footer
 		+script('js/main.js')

@@ -1,0 +1,58 @@
+// vars
+$buttonSmallFontSize: 14px;
+$buttonMediumFontSize: 18px;
+$buttonBigFontSize: 24px;
+// button small vars
+$buttonSmallWidth: 140px;
+$buttonSmallHeight: 30px;
+// button medium vars
+$buttonMediumWidth: 180px;
+$buttonMediumHeight: 40px;
+// button big vars
+$buttonBigWidth: 230px;
+$buttonBigHeight: 50px;
+
+
+// define all buttons types
+$buttons: (
+	primary: #2196f3,
+	alert: #f44336,
+	succes: #4caf50,
+	warning: #ffeb3b
+	);
+
+// default settings for button with some sizes
+// alignType can get 3 params 'flex' / 'lineHeight' / 'absolute'
+// note: if u are using 'absolute' param in alingType u show wrap your text into [data-button-wrap]
+// so u will get something like this 
+// <button type="button" data-button="alert big"> <span data-button-wrap> Alert </span> </button>
+$button: (
+	alignType: 'flex'
+	);
+
+// button with sizes settings
+// lineHeight by defaul will get height of a button
+// if u will use border-top/bottom u should recalc lineHeight by yourself
+$buttonSmall: (
+	width: $buttonSmallWidth,
+	height: $buttonSmallHeight,
+	fontSize: $buttonSmallFontSize,
+	alignType: map-get($button, alignType),
+	lineHeight: $buttonSmallHeight
+	);
+
+$buttonMedium: (
+	width: $buttonMediumWidth,
+	height: $buttonMediumHeight,
+	fontSize: $buttonMediumFontSize,
+	alignType: map-get($button, alignType),
+	lineHeight: $buttonMediumHeight
+	);
+
+$buttonBig: (
+	width: $buttonBigWidth,
+	height: $buttonBigHeight,
+	fontSize: $buttonBigFontSize,
+	alignType: map-get($button, alignType),
+	lineHeight: $buttonBigHeight
+	);

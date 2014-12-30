@@ -6,12 +6,13 @@
 			map-get($heroWrap, height)
 		);
 	background: map-get($heroWrap, background);
+	background-size: map-get($heroWrap, backgroundSize);
 
 
 	@if (map-get($heroWrap, alignType) == 'absolute') { position: relative; }
 	@else if (map-get($heroWrap, alignType) == 'flex') { @include flex(center, center); flex-direction: column; }
 	@else {
-		@warn "You can apply only 'flex'/'absolute' into alignType. If it not getting this values, it will set to 'absolute'";
+		@error "You can apply only 'flex'/'absolute' into alignType. If it not getting this values, it will set to 'absolute'";
 		position: relative;
 	}
 }

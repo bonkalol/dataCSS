@@ -1,1 +1,94 @@
 @import 'buttons.setters';
+
+@each $buttonName, $buttonColor in $buttons {
+	[data-button*="#{$buttonName}"] {
+		background-color: $buttonColor;
+	}
+}
+
+@mixin buttonWrap() {
+	& {
+		// generate absolute position alignType
+		position: relative;
+
+		@at-root {
+			[data-button-wrap] {
+				position: absolute;
+				@include alignMid();
+			}
+		}
+	}
+}
+
+[data-button] {
+
+	@if (map-get($button, alignType) == 'flex') {
+		@include flex(center, center);
+	}
+	@else if (map-get($button, alignType) == 'absolute') {
+		@include buttonWrap();
+
+	}
+	@else if (map-get($button, alignType) == 'lineHeight') {
+		@warn 'If u are using border-top/bottom u should recalc lineheight by yourself';
+	}
+	@else {
+		@error 'Buttons can get only "flex"/"absolute"/"lineHeight" into alignType Param. alignType will set to absolute now';
+		@include buttonWrap();
+	}
+
+}
+
+// Types
+
+// SMALL
+[data-button*="small"] {
+
+	@include size(
+			map-get($buttonSmall, width),
+			map-get($buttonSmall, height)
+		);
+
+	font-size: map-get($buttonSmall, fontSize);
+
+	@if (map-get($button, alignType) == 'lineHeight') {
+		line-height: map-get($buttonSmall, height);
+		text-align: center;
+	}
+
+}
+
+// MEDIUM
+[data-button*="medium"] {
+
+	@include size(
+			map-get($buttonMedium, width),
+			map-get($buttonMedium, height)
+		);
+
+	font-size: map-get($buttonMedium, fontSize);
+
+	@if (map-get($button, alignType) == 'lineHeight') {
+		line-height: map-get($buttonMedium, height);
+		text-align: center;
+	}
+
+}
+
+// BIG
+[data-button*="big"] {
+
+	@include size(
+			map-get($buttonBig, width),
+			map-get($buttonBig, height)
+		);
+
+	font-size: map-get($buttonBig, fontSize);
+
+	@if (map-get($button, alignType) == 'lineHeight') {
+		line-height: map-get($buttonBig, height);
+		text-align: center;
+	}
+
+}
+// end @if
