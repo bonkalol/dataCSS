@@ -36,7 +36,8 @@ input, textarea { font-family: inherit; }
 
 [data-button*="warning"] { background-color: #ffeb3b; }
 
-[data-button] { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+[data-button] { position: relative; }
+[data-button-wrap] { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 [data-button*="small"] { width: 140px; height: 30px; font-size: 14px; }
 

@@ -27,7 +27,7 @@ $buttons: (
 // so u will get something like this 
 // <button type="button" data-button="alert big"> <span data-button-wrap> Alert </span> </button>
 $button: (
-	alignType: 'flex'
+	alignType: 'absolute'
 	);
 
 // button with sizes settings
